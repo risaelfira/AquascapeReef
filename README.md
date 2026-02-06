@@ -31,21 +31,37 @@
 
 AquascapeReef/
 ├─ sitemap
+
 ├─ style.css
+
 ├─ terumbu_karang.php
+
 ├─ terumbu_terancam.php
+
 ├─ users.json
+
 ├─ _data_corals.php
+
 ├─ _data_cultivations.php
+
 ├─ _layout_headscript.php
+
 ├─ _process_login.php
+
 ├─ _process_register.php
+
 ├─ budidaya_terumbu_karang.php
+
 ├─ output.json
+
 ├─ register.php
+
 ├─ syna3877_coral_interaction_2025.sql
+
 ├─ _old/
+
 ├─ img/
+
 ├─ pemweb/
 
 
