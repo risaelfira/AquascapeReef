@@ -1,0 +1,77 @@
+<?php
+
+$corals = [
+  [
+    "name" => "Acropora suharsonoi",
+    "tagline" => "Permata laut langka dari Raja Ampat",
+    "img" => "pemweb/Acropora suharsonoi.web/karang.jpg",
+    "link" => "Acropora",
+    "desc_small" => "Rare staghorn coral endemic to Indonesia's deep reef slopes.::Has long, tapered branches with only axial corallites.::Highly sensitive to bleaching, disease, and predation.::Named after coral expert Suharsono, first described in 1994.",
+    "desc_html" => "<strong>Acropora suharsonoi</strong> adalah spesies karang bercabang langka yang hanya ditemukan di wilayah tropis seperti Raja Ampat, Papua Barat...",
+    "ancaman_html" => "Ancaman terhadap Acropora suharsonoi meliputi pemutihan karang, polusi laut, penangkapan ikan destruktif, pembangunan pesisir, dan minimnya upaya konservasi...",
+    "lokasi_html" => "Karang ini hanya ditemukan di <strong>Raja Ampat, Papua Barat</strong>.",
+    "lokasi_coordinate_txt" => "-5.4730° LS, 130.4670° BT",
+    "lokasi_iframe_url" => "https://www.google.com/maps?q=-5.4730,130.4670&hl=id&z=10&output=embed",
+    "pelestarian_html" => "Melindungi <strong>Acropora suharsonoi</strong> berarti menjaga sistem kehidupan laut tropis yang saling bergantung...",
+  ],
+  [
+    "name" => "Euphyllia baliensis",
+    "tagline" => "Keajaiban Karang Polip Besar dari Kedalaman Nusantara",
+    "img" => "pemweb/Euphyllia baliensis/euphyllia.jpg",
+    "link" => "Euphyllia",
+    "desc_small" => "Rare coral found only off eastern Bali, Indonesia.::Has thin branches and tiny 3 mm corallites.::Tentacles shaped like hammers or mittens.::Lives at 27-37 m depth and is considered endemic.",
+    "desc_html" => "<strong>Euphyllia baliensis</strong> adalah spesies karang batu (Scleractinia) yang sangat dicari dalam dunia akuarium bahari dan dikenal karena polipnya yang besar, berdaging, dan seringkali memiliki ujung berwarna-warni yang berpendar. Karang ini termasuk dalam famili Euphylliidae, yang terkenal dengan spesies karang hiasnya seperti Torch Coral, Hammer Coral, dan Frogspawn Coral. Polip 'Euphyllia baliensis' menampilkan gerakan yang anggun di dalam air, menjadikannya pemandangan yang memukau bagi penyelam dan penggemar akuatik. Bentuk koloninya bisa bervariasi, dari percabangan hingga masif, disesuaikan dengan lingkungan tempat tumbuhnya. Warna polipnya sangat beragam, mulai dari hijau neon, biru keunguan, hingga cokelat keemasan, seringkali dengan sentuhan warna kontras pada ujungnya. <br><br> 'Euphyllia baliensis' memiliki kerangka kalsium karbonat yang kuat dan berkontribusi pada struktur terumbu karang. Sebagai karang fotosintetik, mereka bersimbiosis dengan alga zooxanthellae, yang menyediakan sebagian besar energi melalui fotosintesis. Karang ini juga memiliki kemampuan untuk menangkap partikel makanan kecil dari kolom air dengan tentakelnya yang bersenjata. Keberadaan spesies 'Euphyllia' di terumbu karang menandakan ekosistem yang relatif sehat dan stabil, karena mereka cenderung sensitif terhadap perubahan kualitas air dan kondisi lingkungan. Keindahan dan keunikan 'Euphyllia baliensis' menjadikannya simbol kekayaan biodiversitas terumbu karang di perairan Indonesia, khususnya Bali yang terkenal dengan keindahan bawah lautnya.",
+    "ancaman_html" => "<div> <strong>1. Perubahan Iklim Global:</strong> Peningkatan suhu laut menyebabkan pemutihan karang, terutama pada spesies yang sensitif seperti 'Euphyllia'. Pengasaman laut juga mengikis kerangka karang, membuatnya lebih rapuh. </div> <div> <strong>2. Perdagangan Karang Hias Ilegal dan Tidak Berkelanjutan:</strong> Karena permintaan tinggi dari industri akuarium, 'Euphyllia baliensis' menjadi target penangkapan. Praktik penangkapan yang tidak diatur dapat menguras populasi liar dan merusak habitatnya. </div> <div> <strong>3. Kerusakan Fisik Akibat Aktivitas Manusia:</strong> Penempatan jangkar yang sembarangan, sentuhan penyelam atau perenang yang tidak hati-hati, dan praktik penangkapan ikan yang merusak (misalnya bom atau pukat) dapat menyebabkan kerusakan fisik langsung pada koloni karang. </div> <div> <strong>4. Polusi dan Sedimentasi:</strong> Efluen dari pemukiman, pertanian, dan pariwisata yang tidak terkelola dengan baik dapat mencemari perairan, menyebabkan pertumbuhan alga berlebih, penyakit karang, dan mengurangi kualitas air yang dibutuhkan untuk kelangsungan hidup 'Euphyllia'. </div> <div> <strong>5. Wabah Penyakit Karang:</strong> Karang, seperti organisme hidup lainnya, rentan terhadap wabah penyakit. Stres lingkungan akibat perubahan iklim dan polusi dapat membuat mereka lebih rentan terhadap infeksi bakteri atau virus yang mematikan. </div>",
+    "lokasi_html" => "Nama <strong>Euphyllia baliensis</strong> menunjukkan bahwa spesies ini pertama kali dideskripsikan dari perairan Bali, Indonesia. Bali, dengan keindahan bawah lautnya yang terkenal, menjadi rumah bagi keanekaragaman hayati laut yang luar biasa. Karang ini umumnya ditemukan di terumbu karang yang terlindung, seringkali di lereng terumbu atau area dengan arus sedang, pada kedalaman yang bervariasi. Meskipun penemuan utamanya di Bali, spesies serupa atau kerabat dekatnya dapat ditemukan di wilayah Indo-Pasifik yang lebih luas. Lokasi spesifik di Bali menjadikan karang ini ikon penting bagi upaya konservasi laut di pulau dewata.",
+    "lokasi_coordinate_txt" => "-8.5167° S, 115.5667° E",
+    "lokasi_iframe_url" => "https://www.google.com/maps?q=-8.5167,115.5667&hl=id&z=14&output=embed",
+    "pelestarian_html" => "Pelestarian <strong>Euphyllia baliensis</strong> sangat vital, tidak hanya karena nilai estetikanya yang tinggi tetapi juga karena perannya dalam menjaga ekosistem terumbu karang yang sehat dan seimbang. Sebagai spesies karang batu, 'Euphyllia baliensis' berkontribusi pada struktur fisik terumbu, menyediakan habitat kompleks dan tempat berlindung bagi ribuan spesies laut lainnya, termasuk ikan, krustasea, dan moluska. Keberadaan karang ini mendukung jaring-jaring makanan laut dan merupakan indikator penting kesehatan laut. <br><br> Secara ekonomi, terumbu karang di Bali adalah aset pariwisata bahari yang tak ternilai. 'Euphyllia baliensis' dan spesies karang lainnya menarik penyelam dan wisatawan, yang mendukung mata pencarian masyarakat lokal melalui industri pariwisata dan perikanan berkelanjutan. Perlindungan terhadap karang ini berarti menjaga sumber pendapatan dan kesejahteraan bagi banyak orang. <br><br> Selain itu, karang adalah pelindung alami garis pantai, mengurangi dampak gelombang dan abrasi. Dari sudut pandang ilmiah, 'Euphyllia baliensis' dapat menjadi subjek penelitian penting mengenai adaptasi karang terhadap perubahan lingkungan dan potensi biofarmasi. Oleh karena itu, upaya konservasi yang efektif, termasuk pengelolaan pariwisata yang berkelanjutan, penegakan hukum terhadap penangkapan ilegal, dan mitigasi perubahan iklim, sangat diperlukan untuk memastikan kelangsungan hidup spesies karang yang indah ini dan ekosistem terumbu karang Bali untuk generasi mendatang.",
+  ],
+  [
+    "name" => "Indophyllia macassarensis",
+    "tagline" => "Keajaiban Polip Berkilau dari Perairan Bali",
+    "img" => "pemweb/Indophyllia macassarensis/indop.jpg",
+    "link" => "Indophyllia",
+    "desc_small" => "Rare coral from Indonesia, found on deep sandy seabeds.::Solitary and free-living, with fleshy transparent tentacles.::Often debated as a variant of Cynarina due to similar traits.::Valued for its vibrant orange-gold color and unique habitat.",
+    "desc_html" => '<strong>Indophyllia macassarensis</strong> adalah spesies karang batu yang memukau, dikenal dengan <strong>polip berdaging dan berwarna cerah</strong>. Karang ini hidup di perairan dalam yang teduh, dengan struktur koralit yang tebal dan septa yang menonjol. Karang ini memainkan peran penting dalam ekosistem laut sebagai habitat biota bentik dan sumber keanekaragaman struktural.',
+    "ancaman_html" => "<ul class='list-disc space-y-4'> <li><strong>Perubahan Iklim:</strong> Pengasaman laut dan peningkatan suhu menyebabkan stres fisiologis.</li> <li><strong>Penangkapan Merusak:</strong> Bom ikan dan pukat menghancurkan habitat mereka.</li> <li><strong>Polusi dan Sedimentasi:</strong> Limbah dan sedimen menutupi permukaan karang.</li> <li><strong>Penambangan dan Pengerukan:</strong> Merusak habitat secara langsung.</li> <li><strong>Perdagangan Karang Hias:</strong> Ancaman dari eksploitasi untuk akuarium.</li> </ul>",
+    "lokasi_html" => "Spesies ini ditemukan di sekitar <strong>Makassar, Sulawesi Selatan</strong> dan perairan laut dalam lainnya di Indonesia. Keberadaannya menandakan ekosistem laut yang masih sehat dan alami.",
+    "lokasi_coordinate_txt" => "5°7'31″ LS, 119°20'35″ BT",
+    "lokasi_iframe_url" => "https://www.google.com/maps?q=-5.1253,119.3431&hl=id&z=12&output=embed",
+    "pelestarian_html" => "Konservasi karang ini penting demi menjaga keanekaragaman hayati laut dalam serta potensi bioteknologi dari senyawa alami yang dihasilkan. Upaya pelestarian termasuk mengurangi polusi, menerapkan perikanan berkelanjutan, dan membentuk kawasan konservasi laut.",
+  ],
+  [
+    "name" => "Isopora togianensis",
+    "tagline" => "Permata Langka dari Perairan Indah Kepulauan Togean",
+    "img" => "isopora.jpg",
+    "link" => "Isopora",
+    "desc_small" => "Endemic to Togian Islands, thrives on shallow reef slopes.::Features thick, circular branches with dome-shaped corallites.::Locally common but listed as Endangered due to climate threats.::Known for fine spinules and strong resistance to currents.",
+    "desc_html" => "<strong>Isopora togianensis</strong> adalah spesies karang batu (Scleractinia) yang memiliki keunikan luar biasa karena statusnya sebagai <strong>endemik Kepulauan Togean, Sulawesi Tengah, Indonesia</strong>. Karang ini ditandai oleh bentuk percabangan yang khas, seringkali membentuk koloni padat dengan cabang-cabang yang ramping atau agak pipih, yang tumbuh mengarah ke atas atau menyebar. Warna karang ini dapat bervariasi, seringkali didominasi oleh nuansa cokelat muda, krem, atau bahkan kehijauan, yang berpadu sempurna dengan lingkungan terumbu karang di sekitarnya. Morfologi cabangnya dirancang untuk efisien dalam menangkap cahaya matahari dan arus air, mendukung zooxanthellae (alga simbion) yang hidup di dalamnya dan menyediakan sebagian besar energinya. <br><br> Sebagai bagian penting dari genus <i>Isopora</i>, karang ini memainkan peran krusial dalam <strong>strukturisasi terumbu karang</strong> di Kepulauan Togean. Koloni <i>Isopora togianensis</i> menyediakan <strong>habitat kompleks dan tempat berlindung</strong> bagi beragam spesies ikan, invertebrata, dan organisme laut lainnya, menjadikannya salah satu fondasi bagi keanekaragaman hayati yang tinggi di wilayah tersebut. Keberadaan spesies endemik seperti <i>Isopora togianensis</i> juga memiliki nilai ilmiah yang sangat tinggi, memungkinkan para peneliti untuk mempelajari evolusi dan adaptasi spesies dalam lingkungan geografis yang terisolasi. Keunikan genetiknya menambah kekayaan warisan alam Indonesia dan menjadikan perlindungannya sangat vital bagi ekosistem global.",
+    "ancaman_html" => "<div> <strong>1. Perubahan Iklim Global:</strong> Peningkatan suhu laut adalah ancaman utama yang menyebabkan pemutihan karang (coral bleaching), di mana alga simbion yang memberikan warna dan nutrisi karang dikeluarkan. Fenomena ini, jika berkepanjangan, dapat menyebabkan kematian massal koloni karang. Pengasaman laut juga mengurangi kemampuan karang untuk membangun kerangka kalsium karbonatnya. </div> <div> <strong>2. Polusi Lokal dan Regional:</strong> Limbah domestik, pertanian, dan industri yang masuk ke perairan dapat menyebabkan eutrofikasi (peningkatan nutrisi berlebihan) dan pertumbuhan alga berlebih yang menutupi karang. Mikroplastik juga menjadi ancaman karena dapat tertelan oleh karang dan menyebabkan stres fisiologis. </div> <div> <strong>3. Metode Penangkapan Ikan yang Destruktif:</strong> Meskipun ada upaya konservasi, praktik penangkapan ikan ilegal seperti penggunaan bom, sianida, dan pukat harimau masih menjadi ancaman serius. Metode ini secara langsung menghancurkan struktur karang dan membunuh biota laut secara masif. </div> <div> <strong>4. Pariwisata dan Aktivitas Pesisir yang Tidak Berkelanjutan:</strong> Peningkatan aktivitas pariwisata yang tidak dikelola dengan baik, seperti jangkar kapal yang merusak karang, sentuhan wisatawan, dan pembangunan fasilitas di pesisir, dapat memberikan tekanan signifikan pada ekosistem terumbu karang yang rapuh. </div> <div> <strong>5. Kurangnya Kesadaran dan Penegakan Hukum:</strong> Meskipun Togean adalah taman nasional, kurangnya sumber daya untuk pemantauan dan penegakan hukum yang efektif masih menjadi tantangan dalam melindungi karang endemik dari ancaman antropogenik. </div>",
+    "lokasi_html" => "<strong>Isopora togianensis</strong> adalah spesies karang yang sangat istimewa karena merupakan <strong>endemik</strong>, yang berarti hanya ditemukan di satu lokasi geografis di dunia, yaitu di perairan <strong>Kepulauan Togean, Sulawesi Tengah, Indonesia</strong>. Kepulauan ini terletak di \"Segitiga Terumbu Karang\" yang terkenal dengan keanekaragaman hayatinya yang luar biasa. Habitat karang ini meliputi berbagai kedalaman di perairan jernih, mulai dari lereng terumbu yang dangkal hingga area yang lebih dalam, di mana kondisi lingkungan mendukung pertumbuhannya yang unik. Keberadaan spesifik di Togean menjadikannya simbol kekayaan alam maritim Indonesia.",
+    "lokasi_coordinate_txt" => "-0.5522° LS, 121.8583° BT",
+    "lokasi_iframe_url" => "https://www.google.com/maps?q=-0.5522,121.8583&hl=id&z=12&output=embed",
+    "pelestarian_html" => "Pelestarian <strong>Isopora togianensis</strong> adalah prioritas utama karena statusnya sebagai spesies endemik yang rapuh. Keberadaannya adalah bukti kekayaan biodiversitas dan keunikan ekosistem laut Togean. Melindungi karang ini berarti menjaga seluruh jaring-jaring kehidupan laut yang bergantung padanya, dari ikan-ikan kecil hingga predator puncak. Karang ini berfungsi sebagai <strong>\"kota bawah laut\"</strong> yang menyediakan makanan, tempat berlindung, dan area pemijahan bagi berbagai spesies laut, yang pada gilirannya mendukung perikanan lokal dan ketahanan pangan masyarakat pesisir. <br><br> Selain itu, terumbu karang di Togean, yang menjadi rumah bagi <i>Isopora togianensis</i>, adalah daya tarik utama <strong>ekowisata bahari</strong>. Kegiatan seperti snorkeling dan menyelam tidak hanya mendatangkan pendapatan bagi masyarakat lokal tetapi juga meningkatkan kesadaran global akan pentingnya konservasi laut. Secara ekologis, terumbu karang juga bertindak sebagai <strong>pelindung alami garis pantai</strong> dari erosi dan dampak gelombang besar, menjaga komunitas pesisir dari bencana alam. Oleh karena itu, investasi dalam konservasi <i>Isopora togianensis</i> adalah investasi untuk masa depan ekologi, ekonomi, dan sosial wilayah Togean dan Indonesia.",
+  ]
+];
+
+// echo json_encode($corals);
+
+// Define the filename
+$filename = "output.json";
+
+// 2. JSON Encode (JSON_PRETTY_PRINT for readability)
+$jsonString = json_encode($corals, JSON_PRETTY_PRINT);
+
+// Check for encoding errors
+if ($jsonString === false) {
+    echo "JSON encoding error: " . json_last_error_msg();
+    exit();
+}
+
+// 3. Write to file
+if (file_put_contents($filename, $jsonString) !== false) {
+    echo "Data successfully saved to " . $filename . "\n";
+} else {
+    echo "Error saving file.\n";
+}

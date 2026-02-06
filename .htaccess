@@ -1,0 +1,25 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Set HTTP_AUTHORIZATION for certain environments (useful for some frameworks)
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Set the base URL for rewrite rules
+    RewriteBase /AquascapeReef/
+
+    # Rule to internally rewrite requests for files without .php extension to their .php counterparts
+    # Only applies if the requested filename (without extension) is not a directory
+    # AND if a file with the .php extension exists
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME}.php -f
+    RewriteRule ^(.*)$ $1.php [L] # Added [L] flag for last rule processing
+
+    # Prevent direct access to index.php if it's acting as a front controller
+    RewriteRule ^index\.php$ - [L]
+
+    # Handle requests for non-existent files or directories by routing them to index.php
+    # This is typically used for single-page applications or front-controller patterns
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule . /index.php [L]
+</IfModule>

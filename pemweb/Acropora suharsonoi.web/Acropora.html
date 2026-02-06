@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Acropora suharsonoi - Terumbu Karang Indonesia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Quicksand', sans-serif; }
+    .bubble { position: absolute; bottom: -100px; width: 20px; height: 20px; background-color: rgba(255,255,255,0.3); border-radius: 50%; animation: rise 8s infinite ease-in; }
+    @keyframes rise { 0% {transform: translateY(0); opacity: 0.3;} 50% {opacity: 0.6;} 100% {transform: translateY(-1200px); opacity: 0;} }
+    .fish { position: absolute; width: 80px; animation: swim 20s linear infinite; }
+    @keyframes swim { 0% { transform: translateX(0); } 100% { transform: translateX(2000px); } }
+  </style>
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    }
+    function toggleDropdownMenu() {
+      const menu = document.getElementById("terumbuDropdown");
+      menu.classList.toggle("hidden");
+    }
+    document.addEventListener("click", function (event) {
+      const menu = document.getElementById("terumbuDropdown");
+      const trigger = document.getElementById("terumbuTrigger");
+      if (!menu.contains(event.target) && !trigger.contains(event.target)) {
+        menu.classList.add("hidden");
+      }
+    });
+  </script>
+</head>
+
+<body class="bg-gradient-to-b from-cyan-100 via-blue-50 to-white text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md fixed w-full top-0 z-30">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="index.php" class="text-xl font-bold text-blue-600 hover:text-blue-800 transition">CoralInteraction</a>
+      <div class="space-x-4 hidden md:flex">
+        <button onclick="scrollToSection('about')" class="hover:text-blue-500 transition">About</button>
+        <div class="relative">
+          <button id="terumbuTrigger" onclick="toggleDropdownMenu()" class="hover:text-blue-500 transition">Terumbu Karang</button>
+          <div id="terumbuDropdown" class="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg hidden z-50">
+            <a href="terumbu_karang.php" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Tentang Terumbu Karang</a>
+            <a href="jenis_terumbu.php" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Jenis Terumbu Karang</a>
+          </div>
+        </div>
+        <button onclick="scrollToSection('user')" class="hover:text-blue-500 transition">User</button>
+        <button onclick="scrollToSection('contact')" class="hover:text-blue-500 transition">Login</button>
+      </div>
+    </div>
+  </nav>
+  <div class="h-24"></div>
+
+  <!-- Efek Laut Hidup -->
+  <div class="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
+    <div class="bubble" style="left: 20%; animation-delay: 0s;"></div>
+    <div class="bubble" style="left: 40%; animation-delay: 3s;"></div>
+    <div class="bubble" style="left: 60%; animation-delay: 6s;"></div>
+    <div class="bubble" style="left: 80%; animation-delay: 1s;"></div>
+    <img src="https://i.ibb.co/YNjFkx3/fish.png" alt="fish" class="fish" style="top: 30%; left: -80px;" />
+  </div>
+
+  <!-- Header -->
+  <header class="relative w-full h-[420px] bg-cover bg-center text-white flex items-center justify-center"
+          style="background-image: url('karang.jpg');">
+    <div class="absolute inset-0 bg-teal-900/60"></div>
+    <div class="relative z-10 text-center px-4">
+      <h1 class="text-4xl md:text-5xl font-bold drop-shadow-lg">Acropora suharsonoi</h1>
+      <p class="mt-4 text-lg italic drop-shadow-sm">Permata laut langka dari Raja Ampat</p>
+    </div>
+    <div class="wave-bottom"></div>
+  </header>
+
+  <!-- Main -->
+  <main class="pt-12 pb-20 px-4 max-w-5xl mx-auto">
+    <div class="bg-panel p-6 md:p-10 shadow-2xl rounded-xl border border-blue-100">
+
+      <!-- Deskripsi Karang -->
+      <div class="mb-6 rounded-md bg-gradient-to-r from-teal-500 to-cyan-400 px-4 py-3 shadow-md">
+        <h2 class="text-white text-2xl font-bold tracking-wide">🧨 Deskripsi Karang</h2>
+      </div>
+      <p class="text-lg leading-relaxed text-justify mb-8">
+        <strong>Acropora suharsonoi</strong> adalah spesies karang bercabang langka yang hanya ditemukan di wilayah tropis seperti Raja Ampat, Papua Barat. Keindahannya terlihat dari bentuk cabang yang ramping seperti kristal bercahaya di bawah sinar matahari laut.
+        <br><br>
+        Sebagai bagian dari genus <i>Acropora</i>, karang ini menjadi pondasi terumbu karang yang kompleks dan menyediakan rumah bagi ribuan spesies laut. Keberadaannya mencerminkan keseimbangan alam, sekaligus menandakan kesehatan ekosistem laut secara menyeluruh.
+      </p>
+
+      <!-- Ancaman -->
+      <div class="mb-6 rounded-md bg-gradient-to-r from-rose-500 to-pink-400 px-4 py-3 shadow-md">
+        <h2 class="text-white text-2xl font-bold tracking-wide">⚠️ Ancaman yang Dihadapi</h2>
+      </div>
+      <div class="text-lg leading-relaxed text-justify space-y-6 mb-8">
+        <div>
+          <strong>1. Coral Bleaching:</strong> Suhu laut meningkat karena perubahan iklim, memaksa karang melepaskan alga simbiotiknya (zooxanthellae) yang penting bagi warna dan makanan. Ini menyebabkan karang memutih dan akhirnya mati jika suhu tak kunjung turun.
+        </div>
+        <div>
+          <strong>2. Pencemaran Laut:</strong> Limbah plastik, minyak, dan bahan kimia industri mencemari laut. Mikroplastik bisa masuk ke tubuh karang dan menghambat pertumbuhannya.
+        </div>
+        <div>
+          <strong>3. Penangkapan Ikan Destruktif:</strong> Metode seperti bom dan sianida merusak karang secara fisik dan kimia, serta membunuh organisme kecil di sekitarnya.
+        </div>
+        <div>
+          <strong>4. Pembangunan dan Turisme:</strong> Aktivitas manusia seperti pembangunan pesisir, snorkeling, dan penurunan jangkar kapal dapat menghancurkan struktur karang secara langsung.
+        </div>
+        <div>
+          <strong>5. Kurangnya Konservasi:</strong> Belum banyak program perlindungan spesifik untuk karang ini, membuat populasinya sangat rentan.
+        </div>
+      </div>
+
+      <!-- Lokasi -->
+      <div class="mb-6 rounded-md bg-gradient-to-r from-indigo-500 to-sky-400 px-4 py-3 shadow-md">
+        <h2 class="text-white text-2xl font-bold tracking-wide">📍 Lokasi Penyebaran</h2>
+      </div>
+      <p class="text-lg leading-relaxed text-justify mb-6">
+        Karang ini hanya ditemukan di <strong>Raja Ampat, Papua Barat</strong>, salah satu kawasan laut terkaya di dunia akan keanekaragaman hayati.
+      </p>
+      <p class="text-lg mb-8">
+        🌐 Koordinat: <code>-0.2346° S, 130.5178° E</code><br>
+        🔗 <a href="https://www.google.com/maps?q=-0.2346,130.5178" target="_blank" class="text-teal-600 underline">Lihat di Google Maps</a>
+      </p>
+
+      <!-- Pelestarian -->
+      <div class="mb-6 rounded-md bg-gradient-to-r from-green-500 to-emerald-400 px-4 py-3 shadow-md">
+        <h2 class="text-white text-2xl font-bold tracking-wide">🌱 Pentingnya Pelestarian</h2>
+      </div>
+      <p class="text-lg leading-relaxed text-justify">
+        Melindungi <strong>Acropora suharsonoi</strong> berarti menjaga sistem kehidupan laut tropis yang saling bergantung. Karang ini menyediakan tempat tinggal bagi banyak spesies ikan dan makhluk laut lainnya. Tanpa karang, seluruh rantai makanan bisa runtuh.
+        <br><br>
+        Terumbu karang juga mendukung ekonomi masyarakat pesisir melalui ekowisata, seperti snorkeling dan diving. Keindahan karang mendatangkan turis, menciptakan lapangan kerja, dan menjaga keseimbangan alam.
+        <br><br>
+        Dari sisi ilmiah, organisme yang hidup di terumbu karang adalah sumber potensi senyawa obat untuk penyakit seperti kanker dan infeksi. Pelestarian karang juga berarti investasi bagi masa depan ilmu pengetahuan dan kesehatan.
+        <br><br>
+        Karang juga berperan sebagai pelindung pantai alami dari gelombang besar dan abrasi. Tanpa karang, daerah pesisir lebih rentan terhadap bencana alam.
+      </p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 mt-16 bg-gradient-to-r from-cyan-600 to-teal-800 text-white font-medium">
+    <p>&copy; 2025 - Website oleh Alfathurrahman| Terumbu Karang Indonesia</p>
+  </footer>
+
+</body>
+</html>

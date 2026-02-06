@@ -1,0 +1,178 @@
+<?php
+// Memulai sesi PHP jika belum dimulai
+if (session_status() === PHP_SESSION_NONE) {
+  session_start();
+}
+?>
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Euphyllia baliensis - Keindahan Berkilau dari Bali</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Roboto', sans-serif; }
+    .hero-title { font-family: 'Merriweather', serif; }
+    .bubble {
+      position: absolute; bottom: -100px; width: 60px; height: 60px;
+      background-color: rgba(255, 255, 255, 0.5); border-radius: 50%;
+      animation: bubble-ascend 10s infinite ease-in; opacity: 0;
+    }
+    .fish {
+      position: absolute; animation: swim 15s infinite linear;
+      width: 120px; transform: scaleX(-1);
+    }
+    @keyframes bubble-ascend {
+      0% { transform: translateY(0); opacity: 0; }
+      50% { opacity: 1; }
+      100% { transform: translateY(-500px); opacity: 0; }
+    }
+    @keyframes swim {
+      0% { left: -100px; transform: scaleX(1); }
+      49% { transform: scaleX(1); }
+      50% { left: calc(100% + 100px); transform: scaleX(-1); }
+      99% { transform: scaleX(-1); }
+      100% { left: -100px; transform: scaleX(1); }
+    }
+    .wave-bottom {
+      position: absolute; bottom: 0; left: 0; width: 100%; height: 50px;
+      background: linear-gradient(to top, rgba(255,255,255,0.8), transparent);
+      border-radius: 50% 50% 0 0 / 100% 100% 0 0; transform: translateY(50%);
+    }
+    .bg-panel-darker { background-color: #e0f2fe; }
+  </style>
+  <script>
+    // Fungsi untuk menggulir ke bagian tertentu di halaman
+    function scrollToSection(id) {
+      document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    }
+    // Fungsi untuk mengaktifkan/menonaktifkan menu dropdown
+    function toggleDropdownMenu() {
+      const menu = document.getElementById("terumbuDropdown");
+      menu.classList.toggle("hidden");
+    }
+    // Menutup dropdown jika mengklik di luar area dropdown atau trigger
+    document.addEventListener("click", function (event) {
+      const menu = document.getElementById("terumbuDropdown");
+      const trigger = document.getElementById("terumbuTrigger");
+      if (!menu.contains(event.target) && !trigger.contains(event.target)) {
+        menu.classList.add("hidden");
+      }
+    });
+  </script>
+</head>
+
+<body class="bg-gradient-to-b from-blue-200 via-indigo-100 to-white text-gray-800">
+
+  <!-- Navbar - Struktur dan fungsionalitas ini sama persis dengan Acropora.html -->
+  <nav class="bg-white shadow-md fixed w-full top-0 z-30">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="index.php" class="text-xl font-bold text-blue-600 hover:text-blue-800 transition">CoralInteraction</a>
+      <div class="space-x-4 hidden md:flex">
+        <button onclick="scrollToSection('about')" class="hover:text-blue-500 transition">About</button>
+        <div class="relative">
+          <button id="terumbuTrigger" onclick="toggleDropdownMenu()" class="hover:text-blue-500 transition">Terumbu Karang</button>
+          <div id="terumbuDropdown" class="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg hidden z-50">
+            <a href="terumbu_karang.php" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Tentang Terumbu Karang</a>
+            <a href="jenis_terumbu.php" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Jenis Terumbu Karang</a>
+          </div>
+        </div>
+        <button onclick="scrollToSection('user')" class="hover:text-blue-500 transition">User</button>
+        <button onclick="scrollToSection('contact')" class="hover:text-blue-500 transition">Login</button>
+      </div>
+    </div>
+  </nav>
+  <div class="h-24"></div>
+
+  <!-- Efek Laut -->
+  <div class="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
+    <div class="bubble" style="left: 20%; animation-delay: 0s;"></div>
+    <div class="bubble" style="left: 40%; animation-delay: 3s;"></div>
+    <div class="bubble" style="left: 60%; animation-delay: 6s;"></div>
+    <div class="bubble" style="left: 80%; animation-delay: 1s;"></div>
+    <img src="https://i.ibb.co/YNjFkx3/fish.png" alt="fish" class="fish" style="top: 30%; left: -80px;" />
+  </div>
+
+  <!-- Header -->
+  <header class="relative w-full h-[420px] bg-cover bg-center text-white flex items-center justify-center"
+          style="background-image: url('euphyllia.jpg'); background-position: center; background-size: cover;">
+    <div class="absolute inset-0 bg-black/40"></div>
+    <div class="relative z-10 text-center px-4">
+      <h1 class="text-4xl md:text-5xl font-bold drop-shadow-lg">Euphyllia baliensis</h1>
+      <p class="mt-4 text-lg italic drop-shadow-sm">Keajaiban Polip Berkilau dari Perairan Bali</p>
+    </div>
+    <div class="wave-bottom"></div>
+  </header>
+
+  <!-- Main -->
+  <main class="pt-12 pb-20 px-4 max-w-5xl mx-auto">
+    <div class="bg-white p-6 md:p-10 shadow-2xl rounded-xl border border-blue-100">
+
+      <!-- Deskripsi Karang -->
+      <div class="mb-6 rounded-md bg-gradient-to-r from-blue-500 to-indigo-400 px-4 py-3 shadow-md">
+        <h2 class="text-white text-2xl font-bold tracking-wide">🧨 Deskripsi Karang</h2>
+      </div>
+      <p class="text-lg leading-relaxed text-justify mb-8">
+        <strong>Euphyllia baliensis</strong> adalah spesies karang batu (Scleractinia) yang sangat dicari dalam dunia akuarium bahari dan dikenal karena polipnya yang besar, berdaging, dan seringkali memiliki ujung berwarna-warni yang berpendar. Karang ini termasuk dalam famili Euphylliidae, yang terkenal dengan spesies karang hiasnya seperti Torch Coral, Hammer Coral, dan Frogspawn Coral. Polip 'Euphyllia baliensis' menampilkan gerakan yang anggun di dalam air, menjadikannya pemandangan yang memukau bagi penyelam dan penggemar akuatik. Bentuk koloninya bisa bervariasi, dari percabangan hingga masif, disesuaikan dengan lingkungan tempat tumbuhnya. Warna polipnya sangat beragam, mulai dari hijau neon, biru keunguan, hingga cokelat keemasan, seringkali dengan sentuhan warna kontras pada ujungnya.
+        <br><br>
+        'Euphyllia baliensis' memiliki kerangka kalsium karbonat yang kuat dan berkontribusi pada struktur terumbu karang. Sebagai karang fotosintetik, mereka bersimbiosis dengan alga zooxanthellae, yang menyediakan sebagian besar energi melalui fotosintesis. Karang ini juga memiliki kemampuan untuk menangkap partikel makanan kecil dari kolom air dengan tentakelnya yang bersenjata. Keberadaan spesies 'Euphyllia' di terumbu karang menandakan ekosistem yang relatif sehat dan stabil, karena mereka cenderung sensitif terhadap perubahan kualitas air dan kondisi lingkungan. Keindahan dan keunikan 'Euphyllia baliensis' menjadikannya simbol kekayaan biodiversitas terumbu karang di perairan Indonesia, khususnya Bali yang terkenal dengan keindahan bawah lautnya.
+      </p>
+
+      <!-- Ancaman yang Dihadapi -->
+      <div class="mb-6 rounded-md bg-gradient-to-r from-orange-500 to-red-400 px-4 py-3 shadow-md">
+        <h2 class="text-white text-2xl font-bold tracking-wide">⚠️ Ancaman yang Dihadapi</h2>
+      </div>
+      <div class="text-lg leading-relaxed text-justify space-y-6 mb-8">
+        <div>
+          <strong>1. Perubahan Iklim Global:</strong> Peningkatan suhu laut menyebabkan pemutihan karang, terutama pada spesies yang sensitif seperti 'Euphyllia'. Pengasaman laut juga mengikis kerangka karang, membuatnya lebih rapuh.
+        </div>
+        <div>
+          <strong>2. Perdagangan Karang Hias Ilegal dan Tidak Berkelanjutan:</strong> Karena permintaan tinggi dari industri akuarium, 'Euphyllia baliensis' menjadi target penangkapan. Praktik penangkapan yang tidak diatur dapat menguras populasi liar dan merusak habitatnya.
+        </div>
+        <div>
+          <strong>3. Kerusakan Fisik Akibat Aktivitas Manusia:</strong> Penempatan jangkar yang sembarangan, sentuhan penyelam atau perenang yang tidak hati-hati, dan praktik penangkapan ikan yang merusak (misalnya bom atau pukat) dapat menyebabkan kerusakan fisik langsung pada koloni karang.
+        </div>
+        <div>
+          <strong>4. Polusi dan Sedimentasi:</strong> Efluen dari pemukiman, pertanian, dan pariwisata yang tidak terkelola dengan baik dapat mencemari perairan, menyebabkan pertumbuhan alga berlebih, penyakit karang, dan mengurangi kualitas air yang dibutuhkan untuk kelangsungan hidup 'Euphyllia'.
+        </div>
+        <div>
+          <strong>5. Wabah Penyakit Karang:</strong> Karang, seperti organisme hidup lainnya, rentan terhadap wabah penyakit. Stres lingkungan akibat perubahan iklim dan polusi dapat membuat mereka lebih rentan terhadap infeksi bakteri atau virus yang mematikan.
+        </div>
+      </div>
+
+      <!-- Lokasi Penyebaran -->
+      <div class="mb-6 rounded-md bg-gradient-to-r from-teal-500 to-green-400 px-4 py-3 shadow-md">
+        <h2 class="text-white text-2xl font-bold tracking-wide">📍 Lokasi Penyebaran</h2>
+      </div>
+      <p class="text-lg leading-relaxed text-justify mb-6">
+        Nama <strong>Euphyllia baliensis</strong> menunjukkan bahwa spesies ini pertama kali dideskripsikan dari perairan Bali, Indonesia. Bali, dengan keindahan bawah lautnya yang terkenal, menjadi rumah bagi keanekaragaman hayati laut yang luar biasa. Karang ini umumnya ditemukan di terumbu karang yang terlindung, seringkali di lereng terumbu atau area dengan arus sedang, pada kedalaman yang bervariasi. Meskipun penemuan utamanya di Bali, spesies serupa atau kerabat dekatnya dapat ditemukan di wilayah Indo-Pasifik yang lebih luas. Lokasi spesifik di Bali menjadikan karang ini ikon penting bagi upaya konservasi laut di pulau dewata.
+      </p>
+      <p class="text-lg mb-8">
+        🌐 Koordinat: <code>-8.3495° S, 115.0920° E</code> (Koordinat umum Bali)<br>
+        🔗 <a href="https://www.google.com/maps?q=-0.2346,130.5178" target="_blank" class="text-teal-600 underline">Lihat di Google Maps</a>
+      </p>
+
+      <!-- Pentingnya Pelestarian -->
+      <div class="mb-6 rounded-md bg-gradient-to-r from-pink-500 to-purple-400 px-4 py-3 shadow-md">
+        <h2 class="text-white text-2xl font-bold tracking-wide">🌱 Pentingnya Pelestarian</h2>
+      </div>
+      <p class="text-lg leading-relaxed text-justify">
+        Pelestarian <strong>Euphyllia baliensis</strong> sangat vital, tidak hanya karena nilai estetikanya yang tinggi tetapi juga karena perannya dalam menjaga ekosistem terumbu karang yang sehat dan seimbang. Sebagai spesies karang batu, 'Euphyllia baliensis' berkontribusi pada struktur fisik terumbu, menyediakan habitat kompleks dan tempat berlindung bagi ribuan spesies laut lainnya, termasuk ikan, krustasea, dan moluska. Keberadaan karang ini mendukung jaring-jaring makanan laut dan merupakan indikator penting kesehatan laut.
+        <br><br>
+        Secara ekonomi, terumbu karang di Bali adalah aset pariwisata bahari yang tak ternilai. 'Euphyllia baliensis' dan spesies karang lainnya menarik penyelam dan wisatawan, yang mendukung mata pencarian masyarakat lokal melalui industri pariwisata dan perikanan berkelanjutan. Perlindungan terhadap karang ini berarti menjaga sumber pendapatan dan kesejahteraan bagi banyak orang.
+        <br><br>
+        Selain itu, karang adalah pelindung alami garis pantai, mengurangi dampak gelombang dan abrasi. Dari sudut pandang ilmiah, 'Euphyllia baliensis' dapat menjadi subjek penelitian penting mengenai adaptasi karang terhadap perubahan lingkungan dan potensi biofarmasi. Oleh karena itu, upaya konservasi yang efektif, termasuk pengelolaan pariwisata yang berkelanjutan, penegakan hukum terhadap penangkapan ilegal, dan mitigasi perubahan iklim, sangat diperlukan untuk memastikan kelangsungan hidup spesies karang yang indah ini dan ekosistem terumbu karang Bali untuk generasi mendatang.
+      </p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 mt-16 bg-gradient-to-r from-cyan-600 to-teal-800 text-white font-medium">
+    <p>© 2025 - Website oleh Alfathurrahman| Pesona Terumbu Karang Bali</p>
+  </footer>
+
+</body>
+</html>

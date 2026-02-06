@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://synthweb.my.id</loc>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://synthweb.my.id/about</loc>
+  </url>
+  <url>
+    <loc>https://synthweb.my.id/terumbu_karang</loc>
+  </url>
+  <url>
+    <loc>https://synthweb.my.id/jenis_terumbu</loc>
+  </url>
+  <url>
+    <loc>https://synthweb.my.id/terumbu_terancam</loc>
+  </url>
+  <url>
+    <loc>https://synthweb.my.id/budidaya_terumbu_karang</loc>
+  </url>
+  <url>
+    <loc>https://synthweb.my.id/komentar</loc>
+  </url>
+</urlset>
